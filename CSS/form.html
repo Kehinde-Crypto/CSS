@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form in css</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    form{
+      border: 1px solid black;
+      padding: 20px;
+    }
+    div{
+      margin-bottom: 10px;
+    }
+    input{
+      border:none;
+      background-color: silver;
+      border-radius: 25px;
+      padding: 10px;
+      width: 70%;
+    }
+    input:focus{
+      outline: none;
+      border-bottom: 1px solid black;
+    }
+   label{
+    text-transform: capitalize;
+   }
+  </style>
+</head>
+<body>
+    <form>
+      <div>
+        <div>
+          <label>First Name</label>
+          <input type="text">
+        </div>
+          
+      </div>
+     <div>
+      <label for="lName">Last name</label>
+      <input type="text" name="" id="lName">
+     </div>
+    </form>
+</body>
+</html>

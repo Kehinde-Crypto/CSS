@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form2 in CSS</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      background-color: whitesmoke;
+      font-weight: 600;
+    }
+    form{
+      background-color: white;
+      height: fit-content;
+      padding: 40px;
+      width: 500px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .first__text{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h2{
+      font-weight: 400;
+    }
+    .second__text{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: .5px solid whitesmoke;
+      padding-bottom: .5rem;
+      
+    }
+    .amount .price{
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .tax{
+      padding: .2rem;
+      background-color: silver;
+      border-radius: .4rem;
+    }
+    .amount .text{
+      font-size: .7rem;
+
+    }
+    .tax small{
+      font-size: .9rem;
+      font-weight: 500;
+      color: #232525;
+    }
+    .third__text{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .third__text small{
+      font-size: .7rem;
+    }
+    .third__text option{
+      padding: 1rem;
+    }
+    .third__text select{
+      padding: .5rem;
+      border-radius: .3rem;
+    }
+    .third__text select:focus{
+      outline: none;
+    }
+    select  span {
+      background-color: plum;
+    }
+    .small__text{
+      background: plum;
+      padding: 2rem;
+      display: block;
+    }
+    .fourth__text{
+      display: flex;
+      justify-content: space-between;
+    }
+    .fourth__text .customer,.number{
+          display: flex;
+          flex-direction: column;
+          gap: .5rem;
+    }
+    .fourth__text input{
+      padding: .5rem;
+      background: silver;
+      border: none;
+    }
+    .fourth__text:focus{
+      outline: none;
+    }
+    .fourth__text small{
+      font-size: .7rem;
+    }
+    /* Button */
+    .button{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+    }
+    .button .btn1{
+      padding: .2rem 1.3rem;
+      border-radius: 3rem;
+      
+    }
+    .btn1{
+      background-color: white;
+     border: 4px solid black;
+     float: overflow;
+     padding: 0.1rem 0.8rem;
+    font-size: .6rem;
+    border-radius: 1.5rem;
+    }
+    .button .btn2{
+      padding: .2rem 1.3rem;
+      border-radius: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-self: flex-start;
+    }
+    .btn2{
+      background-color: white;
+     border: 4px solid black;
+     display: flex;
+      flex-direction: column;
+    }
+
+  </style>
+</head>
+<body>
+  <form>
+    <div class="first__text">
+      <h2>Payment details</h2>
+      <small>X</small>
+    </div>
+    <div class="second__text">
+      <div class="amount">
+        <small class="text">Amount</small>
+        <small>$170.00</small>
+      </div>
+      <div class="tax">
+       <small class="price">Tax:$5.75</small>
+      </div>
+    </div>
+    <div class="third__text">
+      <small>customer</small>
+      <select name="" id="">
+        <option> <span class="small__text">V</span> Victor Kio</option>
+        <option> <span>A</span> Alexander</option>
+        <option> <span>T</span>Tomi</option>
+      </select>
+    </div>
+
+    <div class="fourth__text">
+      <div class="customer">
+        <small>Customer ID</small>
+        <input type="text" readonly value="Victor Kio">
+      </div>
+      <div class="number">
+        <small>Routing Number</small>
+        <input type="text" readonly value="#58068">
+    </div>
+     <div class="button">
+      <button class="btn1">Cancel</button>
+      <button class="btn2">Continue</button>
+     </div>
+     </div>
+  </form>
+</body>
+</html>
