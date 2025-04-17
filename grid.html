@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid in CSS</title>
+  <style>
+    *{
+      font-family: sans-serif;
+      text-align: center;
+    }
+    .child{
+      background-color: teal;
+      padding: 30px;
+
+    }
+    .child:nth-child(even){
+      background-color: gray;
+      padding: 30px;
+    }
+    .parent{
+      display: grid;
+      /* to set the column and the row */
+      /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;  a solid replacement of the code , if the colunm is of different width we cannot repeat it if default uint for grid is fraction*/
+      /* grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: 1fr  2fr 1fr; */
+      width: 800px;
+      border: 2px solid black;
+      /* row is the height , column is the width */
+      grid-template-columns: repeat(3 1fr);
+      /* grid-template-rows: minmax(1fr, auto);  */
+      grid-template-rows: repeat(2,minmax(1fr,auto));
+      grid-gap: 10px;
+    }
+  </style>
+</head>
+<body>
+   <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+    <div class="child">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+   </div>
+</body>
+</html>

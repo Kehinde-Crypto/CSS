@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+     *{
+      margin: 0;
+      padding: 0;
+      /* box-sizing: ;
+      */
+
+    }
+     .box{
+      width: 200px;
+      height: 200px;
+      border: 5px solid blue;
+      margin: 30px 10px 40px 10px;
+     }
+     #first{
+      box-sizing: border-box;
+      padding: 30px;
+      
+     }
+     /*
+      box-sizing: border-box;  // this will include the padding and border in the element's total width and height. 
+      box-sizing: content-box; // this will not include the padding and border in the element's total width and height.
+     */
+     #second{
+      box-sizing: content-box;
+      padding: 30px;
+      padding: 30px 10px;
+      margin: 0 auto;
+     }
+  </style>
+  <title>Box Model in css</title>
+</head>
+<body>
+  <div class="box" id="first">
+    Lorem ipsum dolor sit amet.
+  </div>
+  <div class="box" id="second">
+    Lorem ipsum dolor sit amet.
+  </div>
+</body>
+</html>

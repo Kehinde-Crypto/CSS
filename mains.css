@@ -1,0 +1,23 @@
+.parent{
+   width: 700px;
+   height: 500px;
+   border-top: 1px solid black;
+   border-right: 3px dashed red;
+   border-bottom: 3px solid blue;
+   display: flex;
+    gap: 16px;
+    flex-wrap:wrap;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.box{
+  height: 200px;
+  width: 200px;
+  background-color: pink;
+}
+ .circle{
+  border-radius: 50%;
+}
+

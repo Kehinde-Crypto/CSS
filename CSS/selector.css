@@ -1,0 +1,15 @@
+:root{
+  --font-size:32px;
+  --color:#ffffffff;
+  --bgColor: tomato;
+  --padding:10px;
+  --br: 3rem;
+}
+/*.text .inner-text > p: this is for a dive that is pointing to the div class  */
+.text .inner-text > p{
+  color: var(--color);
+  background-color: var(--bgColor);
+  padding: var(--padding);
+  border-radius: var(--br);
+  font-size: var(--br);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Flex in CSS</title>
+  <style>
+    .box{
+      background-color: teal;
+      /* padding: 32px; */
+      height: 200px;
+      width: 200px;
+      display: flex;
+        justify-items:center;
+        align-items: center;
+        border-radius: 0px 0px 42px 0px;
+    }
+    .box:nth-child(even){
+      background-color: gray;
+    }
+    .parent{
+      display: flex;
+        flex-direction: row;
+      /* flex-direction: row; */
+      gap: 5px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: center;
+      /* align-items: end; */
+      height: 600px;
+      background-color: silver;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="box"> 
+      <p>text</p>
+    </div>
+    <div class="box"> 
+      <p>text</p>
+    </div>
+    <div class="box"> 
+      <p>text</p>
+    </div>
+    <div class="box"> 
+      <p>text</p>
+    </div>
+    <div class="box"> 
+      <p>text</p>
+    </div>
+    <div class="box"> 
+      <p>text</p>
+    </div>
+  </div>
+ 
+</body>
+</html>
