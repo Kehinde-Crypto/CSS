@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+body{
+  padding: 15%;
+  font-size: 2rem;
+}
+/* input,button{
+  font: inherit;
+} */
+p{
+   line-height: 1.5rem; 
+=======
+body{
+  padding: 15%;
+  font-size: 2rem;
+}
+/* input,button{
+  font: inherit;
+} */
+p{
+   line-height: 1.5rem; 
+>>>>>>> d9713cdc1d7ebd7504e50e1dadfc856960cd80bb
+}

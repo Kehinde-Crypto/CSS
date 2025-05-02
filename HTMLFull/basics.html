@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <style>
+    body {
+      background-image: url('example_img_girl.jpg');
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+    }
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  /* border-radius: 10px;  to make the boxes in the rectangle shape its for circluar shapes */
+}
+th, td {
+  background-color: #96D4D4;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  border-spacing: 30px;
+}
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+    </style>
+</head>
+<body>
+  
+  <!-- HTML elements with no content are called empty elements. -->
+   <h1>The Largest</h1>
+   <p>This is a paragraph</p>
+   <a href="https://www.w3schools.com">This is a link tag</a>
+   <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+   <p>This is a <br> paragraph with a line break.</p>
+   <!-- <img src="img_girl.jpg"> -->
+   <p style="color:red;">This is a red paragraph.</p>
+   <p title='John "ShotGun" Nelson'>
+    <!-- A paragraph always starts on a new line, and is usually a block of text. -->
+     <!-- The <hr> element is used to separate content (or define a change) in an HTML page: -->
+     <h1 style="color:blue;">This is a heading</h1>
+     <p style="color:red;">This is a paragraph.</p>
+       <!-- The CSS font-family property defines the font to be used for an HTML element: -->
+        <!-- This is used in percentage The CSS font-family property defines the font to be used for an HTML element: -->
+         <!-- <h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p> -->
+<!-- The HTML <strong> element defines text with strong importance. The content inside is typically displayed in bold. -->
+  <!-- <i>This text is italic</i> The HTML <i> element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic. -->
+
+
+    <!-- The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O: -->
+
+      <!-- The HTML <blockquote> element defines a section that is quoted from another source.
+
+Browsers usually indent <blockquote> elements. -->
+  <p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!-- <bdo dir="rtl">This text will be written from right to left</bdo>  The HTML <bdo> tag is used to override the current text direction: -->
+
+  <!-- <a href="url">link text</a>
+  The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window 
+  
+  -->
+
+
+  <a href="default.asp">
+    <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+    </a>
+    <a href="mailto:someone@example.com">Send email</a>
+    <!-- <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+ -->
+
+ <!-- <h2 id="C4">Chapter 4</h2>     Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+ --> 
+
+ <!-- <img src="workplace.jpg" alt="Workplace" usemap="#workmap"> -->
+
+ <!-- <area shape="rect" coords="34, 44, 270, 350" href="computer.htm"> -->
+
+ <picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+<!-- <picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+Each <source> element has a media attribute that defines when the image is the most suitable. -->
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+<!-- td stands for table data. -->
+ <!-- tr stands for table row. -->
+
+ <table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <td>Lastname</td>
+    <td>Age</td>
+  </tr>
+  <tr style="height:200px">
+
+    <th>Jill</th>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<!-- The table tag , then the table row then the table data or table header -->
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+
+<!-- To make a cell span over multiple columns, use the colspan attribute: -->
+
+<!-- Add the border-bottom property to all tr elements to get horizontal dividers:
+
+ -->
+ <colgroup>
+  <col span="2" style="background-color: #D6EEEE" 
+  >
+</colgroup>
+<tr>
+  <th>MON</th>
+  <th>TUE</th>
+  <th>WED</th>
+  <th>THU</th>
+</body>
+</html>
