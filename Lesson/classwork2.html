@@ -14,10 +14,10 @@
     }
     .pic{
       padding: 10px;
-       float: left; 
+      float: left; 
       margin: 10px;
       width: 50%;
-      width: 40%;
+      height: 300px; 
     }
     .login{
     margin: 10px;
@@ -28,12 +28,23 @@
     .login h1{
       color: red;
     }
-
+     @media only screen and (max-width:600px){
+       .pic{
+        display: none;
+       }
+       img{
+        display: none;
+       }
+       div{
+        background-image: url("../pics/eth.jpg");
+        object-fit: cover54;
+       }
+     }
    </style>
 </head>
 <body>
   <div class="pic">
-    <img src="./vitalik b.jpg" alt="vitalik">
+    <img src="../pics/eth.jpg" alt="vitalik">
   </div>
   <!--- Login !--->
    <div class="login">
