@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <input id="start">
+    <input id="stop">
+    <button onclick="clickMe()"></button>
+    </center>
+
+  <script>
+    // start and stop (These are buttons) we should have a input field
+    // then it does an count down
+    // the the clickMe() function will enable us to do the count down
+
+    // i = start
+    // j = stop
+    //  var i = 0 ;
+    //  var j = 100 ;
+    //  function clickMe(){
+    //  for(let i = 0; i <= 100; i++){
+    //    for(let j = 1; j <= j; j++){
+    //     if(i <= 100){
+    //       document.getElementById('start').innerHTML = i;
+    //     }else if (i <= 99){
+    //       document.getElementById('stop').innerHTML = j;
+    //     }
+    //    }
+    //  }
+    //  }
+    
+     var start = document.getElementById('start').value
+     var stop = document.getElementById('stop').value
+     if(start > stop){
+      var i = start
+      var container = ''
+      while(i >= stop){
+        container = container + '-' + 1
+        i--
+      }
+      document.getElementById('lamb').innerHTML = container
+     }else if(start < stop){
+       var i = start
+       var container = ''
+       while(i <= stop){
+          container = container + '-' + 1
+        i++
+       }
+       document.getElementById('lamb').innerHTML = container
+     }
+    
+
+  </script>
+</body>
+</html>

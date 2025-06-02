@@ -1,0 +1,29 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+    <center>
+
+      <p id="p" ></p>
+        <input type="text" id="name" onkeyup="firstFunction()">
+        <br/> <br/>
+        <button onclick="firstFunction()">Call</button>
+        </center>
+
+      </body>
+    <script>
+    function firstFunction(){
+      // Created a local variable then used the value is the text we will type ,
+      // why it is .innerHTML is because it is a string
+      var input = document.getElementById("name").value
+      document.getElementById('p').innerHTML = input;
+    }
+    firstFunction();
+
+      
+    </script>
+    </html>

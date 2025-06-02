@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-loops2</title>
+  <style>
+     .item{
+     border: 2px solid red;
+     margin: 10px;
+     float: left;
+     }
+  </style>
+</head>
+<body>
+  
+   <div id="lamb"></div>
+
+
+
+  <script>
+    // display that count from 0 - 5 using inner html
+    var x = 1;
+    var container = "";
+        for(let x = 1; x <= 100; x++){
+      container = container + '<p class="item">' + x + '</p>';
+       x++
+      
+    }
+     document.getElementById('lamb').innerHTML = container;
+
+    // 
+
+
+
+
+  </script>
+</body>
+</html>

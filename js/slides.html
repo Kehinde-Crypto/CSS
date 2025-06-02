@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slide</title>
+  <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.css">
+</head>
+<body>
+      
+    <div class="owl-carousel">
+      <div> <img src="../images/city.png"  width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+      <div> <img src="../images/city.png" width="100px"> </div>
+    </div>
+    <button class="play">Play</button>
+    <button class="stop">Stop</button>
+
+
+</body>
+<script src="owlcarousel/docs/assets/vendors/jquery.min.js"></script>
+<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:5,
+    loop:true,
+    margin:20,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" id="score">
+
+  <button onclick="addScore()">SUM</button>
+  <button onclick="addAvg()">AVG</button>
+</body>
+<script>
+ var scoreArray = []
+ function addScore(){
+    var input = Number (document.getElementById('score').value);
+    scoreArray.push(input);
+    document.getElementById('score').value = ''
+
+  }
+  function addAvg(){
+      var sum = 0
+      for(var i = 0; i < scoreArray.length; i++){
+        sum = sum + scoreArray[i];
+      }
+      console.log(sum/scoreArray.length)
+  }
+</script>
+</html>

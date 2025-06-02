@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food</title>
+  <style>
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .header{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          padding: 20px 40px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
+          .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+          }
+          .nav-links{
+            gap: 50px;
+            list-style: none;
+            display: flex;
+          }
+          .nav-links li a{
+            color: black;
+            font-weight: 500;
+          }
+            .nav-links li a:hover {
+            color: green;
+          }
+          .cart-icon {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+          }
+          .sections {
+            text-align: center;
+            padding: 60px 20px 40px;
+            margin: 70px;
+            
+          }
+          .sections h2{
+            font-size: 36px;
+            margin-bottom: 13px;
+            color: #333;
+          }
+        .sections p{
+            margin: 0 auto;
+            max-width: 600px;
+            font-size: 16px;
+            color: #777;
+            line-height: 1.6;
+            text-align: center;
+            word-break: break-all;
+          }
+          .product-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+            
+          }
+          .product-card{
+            border: 1px solid #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+          }
+          .product-card:hover {
+        transform: scale(1.03);
+        }
+        .product-card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      .product-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      .product-card .old-price {
+        text-decoration: line-through;
+        color: #aaa;
+        font-size: 14px;
+      }
+      .product-card .new-price,
+      .product-card .price {
+        color: green;
+        font-weight: bold;
+        font-size: 16px;
+      }
+  </style>
+</head>
+<body>
+   <nav class="header">
+     <div class="logo">VEGEFOODS</div>
+     <ul class="nav-links">
+       <li><a href="#" style="color: green;">HOME</a></li>
+      <li><a href="#">SHOP</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">CONTACT</a></li>
+     </ul>
+     <a href="#" class="cart-icon">[0]</a>
+   </nav>
+    <!-- Our Products Section -->
+   <section class="sections">
+   <h2>Our Products</h2>
+  <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+  </section>
+
+  <!-- Picture 1 -->
+   <section class="product-grid">
+   <div class="product-card">
+    <img  src="pictures/bell pepper.jpg" alt="bell pepper">
+    <h3>Bell Pepper</h3>
+    <p class="old-price">$120.00</p>
+    <p class="new-price">$80.00</p>
+   </div>
+
+   <!-- Picture 2 -->
+
+   <div class="product-card">
+    <img  src="pictures/strawberry.jpg" alt="strawberry">
+   <h3>Strawberry</h3>
+  <p class="price">$120.00</p>
+   </div>
+   
+  <!--  Picture 3 -->
+
+  <div class="product-card">
+    <img  src="pictures/green-beans.jpg" alt="green-beans" width="70 height="70">
+     <h3>Green Beans</h3>
+    <p class="price">$120.00</p>
+  </div>
+  <!--  Picture 4 -->
+  <div class="product-card">
+    <img  src="pics/vitalik b.jpg" alt="vitalik"  >
+     <h3>vitalik .B</h3>
+    <p class="price">$12000000.00</p>
+  </div>   
+   
+  <!-- Picture 5 -->
+   <div class="product-card">
+    <img src="pictures/tomatoes-1296x728-feature.jpg" alt="tomatoes-1296x728-feature">
+    <h3>Tomato</h3>
+    <p class="old-price">$120.00</p>
+    <p class="new-price">$80.00</p>
+   </div>
+
+   <!-- Picture 6 -->
+    <div class="product-card">
+      <img  src="pictures/brocllui.jpg" alt="brocllui">
+      <h3 class="price">$120.00</h3>
+    </div>
+
+    <!-- Picture 7 -->
+     <div class="product-card">
+      <img  src="pictures/carrot.jpg" alt="carrot">
+       <h3>Carrot</h3>
+      <h3 class="price">$120.00</h3>
+     </div>
+
+     <!-- Picture 8 -->
+      <div class="product-card">
+        <img  src="pictures/fruitJ.jpg" alt="fruitJ">
+         <h3>FruitJ</h3>
+      <h3 class="price">$190.00</h3>
+      </div>
+
+  </section>
+  </body>
+</html>

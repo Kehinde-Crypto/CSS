@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <center>
+    <p>STATUS: <span id="mssg"></span></p>
+    <input type="text" id="age"><br><br>
+    <select id="gender" >
+      <option value="female">Male</option>
+      <option value="female">Female</option>
+    </select><br><br>
+    <button onclick="demo()">Check</button>
+  </center>
+
+</body>
+<script>
+  function demo(){
+    var age = document.getElementById('age').value
+    var gender = document.getElementById('gender').value
+    var display = document.getElementById('mssg')
+
+    if(gender == 'male'){
+      display.style.color = 'green'
+      display.innerHTML = 'WELCOME MALE'
+    }else if(gender == 'female'  && age >= 18){
+      display.style.color = 'green'
+      display.innerHTML = 'WELCOME FEMALE'
+    }else{
+      display.style.color = 'red'
+      display.innerHTML = 'NOT WELCOME'
+    }
+  }
+</script>
+</html>

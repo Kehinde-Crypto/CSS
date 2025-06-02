@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  
+</style>
+<body>
+  
+   <center>
+     <div class="email">
+    <input type="number" placeholder="********" id="password">
+    <input type="number" placeholder="********" id="VP">    
+     </div>
+     <button onclick="clickme()">Sign IN</button>
+   <p id="p"></p>
+    </center>
+
+</body>
+<script>
+  // Steps to be followed
+  // enter the valid email
+  // enter the valid password
+   // enter the verified password
+
+  // we will have to check if the password be matching 
+  // so that when we click we have the Success or Fail when we click on Sign in THE IT WILL DISPLAY ON THE SCREEN
+
+
+  // first step is that we will check if the first password is a has strings and numbers
+
+  function clickme(){
+       var pass = document.getElementById('password').value
+       var confirm = document.getElementById('VP').value
+
+       if(pass == confirm){
+         console.log('success'); 
+         document.getElementById('p').innerHTML = 'Success';
+       }else{
+       console.log('fail');
+       document.getElementById('p').innerHTML = 'Wrong'
+       }
+       
+  }
+  
+</script>
+</html>

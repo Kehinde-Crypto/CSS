@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+   <input type="text" id="word" placeholder="Type here..." onkeyup="filter()">
+   <button onclick="filter()">Clean</button>
+   <p class="id"></p>
+</body>
+
+<script>
+     let languages  = [
+        "fuck you",
+        "nigga"
+     ];
+
+     function filter(){
+        // get the languages from the object
+        // then you get slice the values  using replace
+        // then you console the message
+        // = document.write(languages.name1 + languages.name2);
+    //  var newInput = in
+    let input = document.getElementById("word").value;
+    languages.forEach(function(badWord){
+      let stars = "*".replace(badWord.length - 2);
+
+      let safeWord = languages.slice(0 ,2) + stars;
+
+      let regex = new RegExp(badWord, "gi");
+      input = input.replace(regex,safeWord);
+    });
+    document.getElementById("result").innerHTML =  "cleaned" + input;
+     }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jsObjects</title>
+</head>
+<body>
+
+  <!-- Create an input box -->
+    <p id="myp"></p>
+    <input type="text" id="myInput"><br> <br>
+    <button id="addButton">Add</button>
+    <button id="avgButton"></button>
+
+
+</body>
+  <script>
+    const addButton = document.getElementById("addButton");
+    const avgButton = document.getElementById("avgButton");
+    var array = []
+    addButton.onclick = function(){
+      var num1 = document.getElementById('myInput').value;
+      array.push(num1);
+    }
+    avgButton.onclick = function(){
+      var avg = array.join("+");
+      document.getElementById("myp").innerHTML = eval(avg)/array.length;
+    }
+
+    let person = {
+      fName: "Kehinde",
+      lName: "Browns",
+      gender: "Male",
+      accountB: "",
+      aboutMe: function(){
+       return ("My name is" + this.fName + "and my last name is :" +  this.lName + "and my gender is:"+ this.gender + "and my account balance" + this.accountB);
+       
+      }
+    };
+   
+    console.log(person.gender);
+    document.write(person.aboutMe());
+ 
+  var str = 'New day , new try';
+  console.log(str.length());
+  
+
+  </script>
+</html>

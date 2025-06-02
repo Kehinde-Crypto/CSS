@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+ <center>
+  <input type="text" placeholder="EMAIL" id="EM">
+  <br>
+  
+  <input type="text" placeholder="PASSWORD" id="PS" >
+  <br>
+  <button onclick="signin()">SIGN-IN</button>
+  <br>
+
+  <br>
+
+  <input type="text" placeholder="EMAIL" id="EM">
+  
+  <br>
+  <input type="text" placeholder="PASSWORD" id="PS">
+  <button onclick="login()">LOGIN</button>
+ </center>
+
+
+  
+</body>
+
+<script>
+  
+/*
+for the Sign Up 
+email array
+for password email
+The sign up will will hold it in an array
+
+the Login 
+then we will check if the EMAIL AND PASSWORD EXIST
+we will click the button , then we will  
+*/
+
+
+let email = [];
+let pass = [];
+function signin(){
+  
+    
+    var email_ = document.getElementById('EM').value;
+    var pass_= document.getElementById('pass').value;
+ 
+     email.push(email_)
+     pass.push(pass_)
+     console.log(email,pass)
+    }  
+function login(){
+   var email = document.getElementById('EM').value;
+   var  pass = document.getElementById('pass').value;
+   console.log(email,pass)
+
+   for(let i = 0; i < email.length;i++ ){
+    if(email[i] == email_ && email[i] == pass){
+      document.getElementById('mssg')
+    }
+   }
+}
+ 
+
+
+</script>
+</html>
